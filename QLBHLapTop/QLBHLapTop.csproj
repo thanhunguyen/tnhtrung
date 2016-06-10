@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0D40BD3-5DFB-48D4-9E57-B3BBA4FBB218}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBHLapTop</RootNamespace>
+    <AssemblyName>QLBHLapTop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\font-awesome-4.6.1\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.6.1\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome-4.6.1\HELP-US-OUT.txt" />
+    <Content Include="assets\jquery-2.2.4.min.js" />
+    <Content Include="assets\startbootstrap-full-1.0.4\css\bootstrap.css" />
+    <Content Include="assets\startbootstrap-full-1.0.4\css\bootstrap.min.css" />
+    <Content Include="assets\startbootstrap-full-1.0.4\css\full.css" />
+    <Content Include="assets\startbootstrap-full-1.0.4\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\startbootstrap-full-1.0.4\index.html" />
+    <Content Include="assets\startbootstrap-full-1.0.4\js\bootstrap.js" />
+    <Content Include="assets\startbootstrap-full-1.0.4\js\bootstrap.min.js" />
+    <Content Include="assets\startbootstrap-full-1.0.4\js\jquery.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="imgs\sp\10\main_thump.jpg" />
+    <Content Include="imgs\sp\11\main_thump.jpg" />
+    <Content Include="imgs\sp\12\asus-x553ma-n2840-2gb-500gb-win10-300-300x300.jpg" />
+    <Content Include="imgs\sp\13\main_thump.jpg" />
+    <Content Include="imgs\sp\14\main_thump.jpg" />
+    <Content Include="imgs\sp\15\main_thump.jpg" />
+    <Content Include="imgs\sp\16\main_thump.jpg" />
+    <Content Include="imgs\sp\17\main_thump.jpg" />
+    <Content Include="imgs\sp\18\main_thump.jpg" />
+    <Content Include="imgs\sp\19\main_thump.jpg" />
+    <Content Include="imgs\sp\1\main_thump.jpg" />
+    <Content Include="imgs\sp\20\main_thump.jpg" />
+    <Content Include="imgs\sp\21\main_thump.jpg" />
+    <Content Include="imgs\sp\22\main_thump.jpg" />
+    <Content Include="imgs\sp\23\main_thump.jpg" />
+    <Content Include="imgs\sp\24\main_thump.jpg" />
+    <Content Include="imgs\sp\25\main_thump.jpg" />
+    <Content Include="imgs\sp\26\main_thump.jpg" />
+    <Content Include="imgs\sp\27\main_thump.jpg" />
+    <Content Include="imgs\sp\28\main_thump.jpg" />
+    <Content Include="imgs\sp\29\main_thump.jpg" />
+    <Content Include="imgs\sp\2\main_thump.jpg" />
+    <Content Include="imgs\sp\30\main_thump.jpg" />
+    <Content Include="imgs\sp\31\main_thump.jpg" />
+    <Content Include="imgs\sp\32\main_thump.jpg" />
+    <Content Include="imgs\sp\33\main_thump.jpg" />
+    <Content Include="imgs\sp\34\main_thump.jpg" />
+    <Content Include="imgs\sp\35\main_thump.jpg" />
+    <Content Include="imgs\sp\36\main_thump.jpg" />
+    <Content Include="imgs\sp\37\main_thump.jpg" />
+    <Content Include="imgs\sp\38\main_thump.jpg" />
+    <Content Include="imgs\sp\39\hp-15-ac174tx-i5-5200u-4gb-500gb-vga2gb-win10-300x300.jpg" />
+    <Content Include="imgs\sp\3\main_thump.jpg" />
+    <Content Include="imgs\sp\40\main_thump.jpg" />
+    <Content Include="imgs\sp\41\main_thump.jpg" />
+    <Content Include="imgs\sp\42\main_thump.jpg" />
+    <Content Include="imgs\sp\43\main_thump.jpg" />
+    <Content Include="imgs\sp\44\main_thump.jpg" />
+    <Content Include="imgs\sp\45\main_thump.jpg" />
+    <Content Include="imgs\sp\46\main_thump.jpg" />
+    <Content Include="imgs\sp\47\main_thump.jpg" />
+    <Content Include="imgs\sp\48\main_thump.jpg" />
+    <Content Include="imgs\sp\4\main_thump.jpg" />
+    <Content Include="imgs\sp\5\main_thump.jpg" />
+    <Content Include="imgs\sp\6\main_thump.jpg" />
+    <Content Include="imgs\sp\7\main_thump.jpg" />
+    <Content Include="imgs\sp\8\main_thump.jpg" />
+    <Content Include="imgs\sp\9\main_thump.jpg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\font-awesome-4.6.1\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.6.1\less\animated.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\core.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\icons.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\larger.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\list.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\path.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\screen-reader.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.6.1\less\variables.less" />
+    <Content Include="assets\font-awesome-4.6.1\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_animated.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_screen-reader.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.6.1\scss\_variables.scss" />
+    <Content Include="assets\startbootstrap-full-1.0.4\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\startbootstrap-full-1.0.4\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\startbootstrap-full-1.0.4\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\startbootstrap-full-1.0.4\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\startbootstrap-full-1.0.4\LICENSE" />
+    <Content Include="assets\startbootstrap-full-1.0.4\README.md" />
+    <EntityDeploy Include="Models\LapTopDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LapTopDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LapTopDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LapTopDB.edmx</DependentUpon>
+      <LastGenOutput>LapTopDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LapTopDB.edmx.diagram">
+      <DependentUpon>LapTopDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\LapTopDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LapTopDB.edmx</DependentUpon>
+      <LastGenOutput>LapTopDB.cs</LastGenOutput>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Manufacturer\PartialView.cshtml" />
+    <Content Include="Views\Product\ByCat.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManufacturerController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LapTopDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapTopDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LapTopDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LapTopDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapTopDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manufacturer.cs">
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>LapTopDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1121</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1121/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

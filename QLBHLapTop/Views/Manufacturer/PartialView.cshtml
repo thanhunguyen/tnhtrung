@@ -1,0 +1,15 @@
+﻿@using QLBHLapTop.Models
+
+@model List<Manufacturer>
+
+
+@foreach (Manufacturer c in Model)
+{
+    <div class="list-group">
+        <a href="@Url.Action("ByCat","Product",new { id = c.ManufacturerID})"
+           class="list-group-item">
+            @c.ManufacturerName
+        </a>
+    </div>
+
+}
